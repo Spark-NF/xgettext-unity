@@ -1,6 +1,6 @@
 {
     "name": "xgettext-unity",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Extract translation strings from Unity YAML files and generate POT files with them.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
