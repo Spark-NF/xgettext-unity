@@ -1,0 +1,39 @@
+{
+    "name": "xgettext-unity",
+    "version": "1.0.0",
+    "description": "Extract translation strings from Unity YAML files and generate POT files with them.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "check": "tslint -p .",
+        "build": "tsc",
+        "test": "jest --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Spark-NF/xgettext-unity.git"
+    },
+    "keywords": [
+        "xgettext",
+        "gettext",
+        "unity",
+        "pot"
+    ],
+    "author": "Spark-NF",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/Spark-NF/xgettext-unity/issues"
+    },
+    "homepage": "https://github.com/Spark-NF/xgettext-unity#readme",
+    "dependencies": {
+        "js-yaml": "^3.13.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.18",
+        "@types/js-yaml": "^3.12.1",
+        "jest": "^24.9.0",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.19.0",
+        "typescript": "^3.5.3"
+    }
+}
