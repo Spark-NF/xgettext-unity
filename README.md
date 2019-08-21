@@ -9,7 +9,33 @@
 Extract translation strings from Unity YAML files and generate POT files with them.
 
 ## Usage
-...
+```typescript
+xgettextUnity(inputFiles: string[], variables: string[], outputFile: string);
+```
+
+* `inputFiles`: the list of Unity files to extract
+* `variables`: which YAML variables to look for in the Unity files
+* `outputFile`: the output POT file (will be overwritten)
+
+### Example
+Basic
+```javascript
+var xgettextUnity = require("xgettext-unity").default;
+
+var inputFiles = ["Assets/Scenes/SampleScene.unity", "Assets/Scenes/MainMenu.unity"];
+var outputFile = "Assets/Localization/template.pot";
+xgettextUnity(inputFiles, ["m_text"], outputFile);
+```
+
+With [glob](https://github.com/isaacs/node-glob)
+```javascript
+var glob = require("glob");
+var xgettextUnity = require("xgettext-unity").default;
+
+var inputFiles = glob.sync("Assets/**/*.{unity,prefab}");
+var outputFile = "Assets/Localization/template.pot";
+xgettextUnity(inputFiles, ["m_text"], outputFile);
+```
 
 ## Authors
 * [Spark-NF](https://github.com/Spark-NF)
