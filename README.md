@@ -10,7 +10,7 @@ Extract translation strings from Unity YAML files and generate POT files with th
 
 ## Usage
 ```typescript
-xgettextUnity(inputFiles: string[], variables: string[], outputFile: string);
+xgettextUnity(inputFiles, variables, outputFile);
 ```
 
 * `inputFiles`: the list of Unity files to extract
